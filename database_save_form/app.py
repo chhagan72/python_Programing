@@ -34,5 +34,10 @@ def register():
     
     return redirect(url_for('index'))
 
+@app.route('/users')
+def users():
+    users_list = collection.find()
+    return render_template('users.html',users=users_list)
+
 if __name__ == '__main__':
     app.run(debug=True)
