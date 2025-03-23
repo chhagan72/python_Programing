@@ -1,0 +1,73 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/* body{
+    background-color: black;
+} */
+
+.left{
+    width: 25vw;
+    padding: 1px;
+}
+.right{
+    width: 75vw;
+}
+.home, .library{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 6px;
+
+}
+.home .logo img{
+    padding: 7px 0px;
+}
+.homesearch ul{
+    list-style: none;
+}
+.homesearch ul li{
+    padding: 10px 0px;
+}
+.homesearch ul li a{
+    text-decoration: none;
+    gap: 20px;
+    position: relative;
+}
+.homesearch ul li a img{
+    width: 25px;
+}
+.homesearch ul li a .bi{
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+.home .homesearch ul li a span{
+    padding: 6px 0px 0px 0px ;
+}
+.library{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 6px;
+}
+.library .lib1 ul{
+    list-style: none;
+}
+.library .lib1 ul li{
+    padding: 10px 0px;
+}
+.library .lib1 ul li a{
+    text-decoration: none;
+    gap: 20px;
+    position: relative;
+}
+.library .lib1 ul li a .bi{
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+.library .lib1 ul li a span{
+    padding: 6px 0px 0px 0px ;
+}
+

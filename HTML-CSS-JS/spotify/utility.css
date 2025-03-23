@@ -1,0 +1,46 @@
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-cetner {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+.bgColor{
+    background-color: #000;
+    color: #b3b3b3;
+}
+.invert{
+    filter: invert(1);
+}
+.invert1{
+    filter: invert();
+}
+.bg-gray{
+    background-color: #242424;
+}
+
+.listItem{
+    display: list-item;
+}
+.unhovering{
+    color: #fff;
+}
+.hovering{
+    color: #b3b3b3;
+    transition: all 0.3s ease-in-out;
+}
+.hovering:hover{
+    color: #fff;
+}
+.bolder{
+    font-weight: bolder;
+}

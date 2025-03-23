@@ -1,0 +1,90 @@
+1 What are local variables and global variables in Python?
+Global Variables: Variables declared outside a function or in a global space are called global variables. These variables can be accessed by any function in the program.
+
+Local Variables: Any variable declared inside a function is known as a local variable. This variable is present in the local space and not in the global space.
+
+2 When to use a tuple vs list vs dictionary in Python?
+Use a tuple to store a sequence of items that will not change.
+Use a list to store a sequence of items that may change.
+Use a dictionary when you want to associate pairs of two items.
+
+3 What is Lambda Functions in Python?
+A Lambda Function is a small anonymous function. A lambda function can take any number of arguments, but can only have one expression.
+
+Consider:
+x = lambda a : a + 10
+print(x(5)) # Output: 15
+
+4 How do I modify a string in python?
+You can’t because strings are immutable in python. In most situations, you should simply construct a new string from the various parts you want to assemble it from. Work with them as lists; turn them into strings only when needed.
+
+>>> s = list("Hello zorld")
+>>> s
+['H', 'e', 'l', 'l', 'o', ' ', 'z', 'o', 'r', 'l', 'd']
+>>> s[6] = 'W'
+>>> s
+['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+>>> "".join(s)
+'Hello World'
+
+5 What is a Negative Index in Python?
+Negative numbers mean that you count from the right instead of the left. So, list[-1] refers to the last element, list[-2] is the second-last, and so on.
+
+6 To find the remainder without using the mode(%) operator.
+
+7. What is the difference between a Set and Dictionary?
+
+8. 1. What is __init__?
+__init__ is a contructor method in Python and is automatically called to allocate memory when a new object/instance is created. All classes have a __init__ method associated with them. It helps in distinguishing methods and attributes of a class from local variables.
+
+# class definition
+class Student:
+   def __init__(self, fname, lname, age, section):
+       self.firstname = fname
+       self.lastname = lname
+       self.age = age
+       self.section = section
+# creating a new object
+stu1 = Student("Sara", "Ansh", 22, "A2")
+
+9. What is the difference between Python Arrays and lists?
+Arrays in python can only contain elements of same data types i.e., data type of array should be homogeneous. It is a thin wrapper around C language arrays and consumes far less memory than lists.
+Lists in python can contain elements of different data types i.e., data type of lists can be heterogeneous. It has the disadvantage of consuming large memory.
+
+10. What is break, continue and pass in Python?
+Break :- The break statement terminates the loop immediately and the control flows to the statement after the body of the loop.
+Continue :-	The continue statement terminates the current iteration of the statement, skips the rest of the code in the current iteration and the control flows to the next iteration of the loop.
+Pass :-	As explained above, the pass keyword in Python is generally used to fill up empty blocks and is similar to an empty statement represented by a semi-colon in languages such as Java, C++, Javascript, etc.
+
+11. What is the use of self in Python?
+Self is used to represent the instance of the class. With this keyword, you can access the attributes and methods of the class in python. It binds the attributes with the given arguments. self is used in different places and often thought to be a keyword. But unlike in C++, self is not a keyword in Python
+
+12. What are modules and packages in Python?
+
+13. What are lists and tuples? What is the key difference between the two?
+Lists and Tuples are both sequence data types that can store a collection of objects in Python. The objects stored in both sequences can have different data types. Lists are represented with square brackets ['sara', 6, 0.19], while tuples are represented with parantheses ('ansh', 5, 0.97).
+But what is the real difference between the two? The key difference between the two is that while lists are mutable, tuples on the other hand are immutable objects. This means that lists can be modified, appended or sliced on the go but tuples remain constant and cannot be modified in any manner. 
+
+14. What is Scope Resolution in Python?
+Sometimes objects within the same scope have the same name but function differently. In such cases, scope resolution comes into play in Python automatically. A few examples of such behavior are:
+
+Python modules namely 'math' and 'cmath' have a lot of functions that are common to both of them - log10(), acos(), exp() etc. To resolve this ambiguity, it is necessary to prefix them with their respective module, like math.exp() and cmath.exp().
+Consider the code below, an object temp has been initialized to 10 globally and then to 20 on function call. However, the function call didn't change the value of the temp globally. Here, we can observe that Python draws a clear line between global and local variables, treating their namespaces as separate identities.
+
+15. How is memory managed in Python?
+Memory management in Python is handled by the Python Memory Manager. The memory allocated by the manager is in form of a private heap space dedicated to Python. All Python objects are stored in this heap and being private, it is inaccessible to the programmer. Though, python does provide some core API functions to work upon the private heap space.
+Additionally, Python has an in-built garbage collection to recycle the unused memory for the private heap space.
+
+16. Explain split() and join() functions in Python?
+You can use split() function to split a string based on a delimiter to a list of strings.
+You can use join() function to join a list of strings based on a delimiter to give a single string.
+
+17 .What are iterators in Python?
+An iterator is an object.
+It remembers its state i.e., where it is during iteration (see code below to see how)
+__iter__() method initializes an iterator.
+It has a __next__() method which returns the next item in iteration and points to the next element. Upon reaching the end of iterable object __next__() must return StopIteration exception.
+It is also self-iterable.
+Iterators are objects with which we can iterate over iterable objects like lists, strings, etc.
+
+18 .

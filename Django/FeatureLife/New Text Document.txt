@@ -1,0 +1,12 @@
+Django create project
+django-admin startproject project_name
+
+Run the project
+py manage.py runserver
+
+Create a app in Django
+py manage.py startapp members
+
+migration
+python manage.py makemigrations
+python manage.py migrate
